@@ -1,0 +1,51 @@
+
+from random import*
+#la simulation de lancer de dé
+c=0
+d1=randint(1,6)
+c=d1
+print("le lencement de dé a donner :",c) 
+##la simulation de lancer de dé n fois
+n=int(input("nbre de lancement:"))
+k=0
+for i in range (n):
+  d2=randint(1,6)
+  c2=d2
+  k=k+1
+  print("le",k,"ème lancement a donner :",c2)  
+
+#pour un nb de lancer on calcule le nb de fois d'appar de 6
+n=int(input("nbre de lancement:"))
+c4=0
+for i in range (n):
+  d3=randint(1,6)
+  c3=d3
+  print(c3)
+  if c3==6:
+    c4=c4+1
+print("le nombre d'app de 6 est",c4)
+#on arrête lorsqu'on obtien le 6+ afficher le nb de fois pour l'appa 
+print("le lanchement du dé")
+nbl=0
+c5=0
+while c5!=6:
+  d4=randint(1,6)
+  c5=d4
+  print(c5)
+  nbl=nbl+1
+print(" le nombre de lancers avant d'obtenir le premier 6 est",nbl)
+
+
+#lancement de la pièce de monnaie
+n=int(input("nbre de lancer de la monnaie:"))
+for i in range (n):
+  d2=randint(1,2)
+  c7=d2
+  #pour afficher le résultat à chaque lancement de la pièce de monnaie 
+  print(c7)  
+
+
+
+
+
+
