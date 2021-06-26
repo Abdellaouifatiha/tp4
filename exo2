@@ -1,0 +1,18 @@
+import numpy as np
+def vecteurStochastique (vecteur) : 
+        if sum(vecteur) == 1 : 
+            return True
+        return False
+
+def matriceStochastique(matrice) : 
+    for vecteur in (matrice) : 
+        if not vecteurStochastique(vecteur) : 
+            return False
+    return True
+
+def matrice_puissance(list, puissance) : 
+    matrice = np.matrix(np.array(list))
+    return matrice**puissance
+
+
+print(matrice_puissance(matrice_test,4))
